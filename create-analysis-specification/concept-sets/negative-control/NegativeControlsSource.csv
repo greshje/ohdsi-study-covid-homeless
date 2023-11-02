@@ -1,0 +1,7 @@
+﻿"concept__CONCEPT_CLASS_ID","concept__CONCEPT_CODE","concept__CONCEPT_ID","concept__CONCEPT_NAME","concept__DOMAIN_ID","concept__INVALID_REASON","concept__INVALID_REASON_CAPTION","concept__STANDARD_CONCEPT","concept__STANDARD_CONCEPT_CAPTION","concept__VOCABULARY_ID","concept__VALID_START_DATE","concept__VALID_END_DATE","isExcluded","includeDescendants","includeMapped"
+"Clinical Finding","59621000","320128","Essential hypertension","Condition","V","Valid","S","Standard","SNOMED","2002-01-31","2099-12-31","False","True","False"
+"Clinical Finding","55822004","432867","Hyperlipidemia","Condition","V","Valid","S","Standard","SNOMED","2002-01-31","2099-12-31","False","True","False"
+"Clinical Finding","386661006","437663","Fever","Condition","V","Valid","S","Standard","SNOMED","2003-01-31","2099-12-31","False","True","False"
+"Clinical Finding","267949000","78232","Shoulder joint pain","Condition","V","Valid","S","Standard","SNOMED","2002-01-31","2099-12-31","False","True","False"
+"Clinical Finding","42345000","4174262","Polyneuropathy","Condition","V","Valid","S","Standard","SNOMED","2002-01-31","2099-12-31","False","True","False"
+"Clinical Finding","68235000","4195085","Nasal congestion","Condition","V","Valid","S","Standard","SNOMED","2002-01-31","2099-12-31","False","True","False"

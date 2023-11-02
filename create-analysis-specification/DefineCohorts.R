@@ -3,17 +3,19 @@ library(CohortGenerator)
 library(knitr)
 
 cohortDefinitionSet <- getCohortDefinitionSet(
-  settingsFileName = "testdata/Cohorts.csv",
-  jsonFolder = "testdata/cohorts",
-  sqlFolder = "testdata/sql",
-  packageName = "Strategus"
+  settingsFileName = "./cohorts/Cohorts.csv",
+  jsonFolder = "./cohorts/json",
+  sqlFolder = "./cohorts/sql"
 )
 
 ncoCohortSet <- readCsv(
-  file = system.file("testdata/negative_controls_concept_set.csv", package = "Strategus")
+  file = "./concept-sets/negative-control/NegativeControls.csv"
 )
 
 kable(cohortDefinitionSet[, c("cohortId", "cohortName")])
 kable(ncoCohortSet)
+
+
+
 
 

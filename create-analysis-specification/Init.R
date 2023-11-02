@@ -25,6 +25,7 @@ installFromCran("pROC", "1.18.5")
 # ---
 
 # install correct versions of HADES packages
+print("* * * installing libraries * * *")
 installFromGithub("ohdsi/CohortDiagnostics", ref = "v3.2.3")
 installFromGithub("ohdsi/Characterization", ref = "v0.1.1")
 installFromGithub("ohdsi/CohortIncidence", ref = "v3.1.5")
@@ -36,6 +37,7 @@ installFromGithub("OHDSI/Strategus", "v0.1.0")
 installFromCran("knitr", ref="1.45")
 
 # load the libraries
+print("* * * installing libraries * * *")
 library(CohortDiagnostics)
 library(Characterization)
 library(CohortIncidence)
@@ -46,3 +48,4 @@ library(CohortGenerator)
 library(Strategus)
 library(knitr)
 
+print("* * * DONE WITH INIT.R * * *")
