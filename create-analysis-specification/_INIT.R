@@ -10,7 +10,7 @@
 #
 # ---
 
-source("functionsForInit.R")
+source("FunctionsForInit.R")
 
 # There is a binary version available but the source version is later:
 #   binary source needs_compilation
@@ -32,5 +32,14 @@ installFromGithub("ohdsi/CohortIncidence", ref = "v3.1.5")
 installFromGithub("ohdsi/CohortMethod", ref = "v5.1.0")
 installFromGithub("ohdsi/SelfControlledCaseSeries", ref = "v4.2.0")
 installFromGithub("ohdsi/PatientLevelPrediction", ref = "v6.3.4")
+installFromGithub("OHDSI/Strategus", "v0.1.0")
 
+library(CohortDiagnostics)
+library(Characterization)
+library(CohortIncidence)
+library(CohortMethod)
+library(SelfControlledCaseSeries)
+library(PatientLevelPrediction)
+library(CohortGenerator)
+library(Strategus)
 
