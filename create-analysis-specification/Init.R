@@ -16,7 +16,7 @@ source("FunctionsForInit.R")
 #   binary source needs_compilation
 # pROC 1.18.4 1.18.5              TRUE
 
-installFromCran("pROC", "1.18.5")
+# installFromCran("pROC", "1.18.5")
 
 # ---
 #

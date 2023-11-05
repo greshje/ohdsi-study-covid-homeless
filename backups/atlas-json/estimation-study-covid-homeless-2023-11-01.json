@@ -2759,7 +2759,7 @@
           },
           "attr_class": "cmAnalysis",
           "analysisId": 1,
-          "description": "New analysis 1",
+          "description": "Estimation Analysis",
           "targetType": null,
           "comparatorType": null,
           "createStudyPopArgs": {

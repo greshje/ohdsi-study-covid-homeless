@@ -6,7 +6,21 @@
 #
 # ---
 
-source("Init.R")
+# ---
+#
+# versions
+#
+# ---
+
+R.Version()
+system("java -version")
+getwd()source("Init.R")
+
+# ---
+#
+# build the package
+#
+# ---
 
 source("DefineCohorts.R")
 
