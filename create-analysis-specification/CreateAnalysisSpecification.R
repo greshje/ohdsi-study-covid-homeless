@@ -14,13 +14,15 @@
 
 R.Version()
 system("java -version")
-getwd()source("Init.R")
+getwd()
 
 # ---
 #
 # build the package
 #
 # ---
+
+source("Init.R")
 
 source("DefineCohorts.R")
 
