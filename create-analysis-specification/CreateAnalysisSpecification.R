@@ -3,6 +3,9 @@
 # CreateAnalysisSpecification.R
 #
 # A master script to create the analysis specification for this study. 
+# See the following web pages for source material and more details:
+# https://ohdsi.github.io/Strategus/articles/CreatingAnalysisSpecification.html 
+# https://ohdsi.github.io/Strategus/index.html
 #
 # ---
 

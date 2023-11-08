@@ -24,13 +24,13 @@ getwd()
 
 installFromCran <- function(pkgName, ref) {
   if (!requireNamespace(pkgName, quietly = TRUE) || packageVersion(pkgName) != ref) {
-    remotes::install_version(pkgName, version = ref, upgrade = FALSE)
+    remotes::install_version(pkgName, version = ref, upgrade = FALSE, INSTALL_opts = "--no-multiarch")
   }
 }
 
 installFromGithub <- function(pkgName, ref) {
   if (!requireNamespace(pkgName, quietly = TRUE) || packageVersion(pkgName) != ref) {
-    remotes::install_github(pkgName, ref=ref, upgrade = FALSE)
+    remotes::install_github(pkgName, ref=ref, upgrade = FALSE, INSTALL_opts = "--no-multiarch")
   }
 }
 

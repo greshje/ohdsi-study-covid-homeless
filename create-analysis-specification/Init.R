@@ -12,10 +12,6 @@
 
 source("FunctionsForInit.R")
 
-# There is a binary version available but the source version is later:
-#   binary source needs_compilation
-# pROC 1.18.4 1.18.5              TRUE
-
 # installFromCran("pROC", "1.18.5")
 
 # ---
