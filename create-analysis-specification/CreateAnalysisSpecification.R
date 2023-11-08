@@ -9,6 +9,8 @@
 #
 # ---
 
+library(CohortIncidence)
+
 # ---
 #
 # versions
@@ -18,6 +20,7 @@
 R.Version()
 system("java -version")
 getwd()
+
 
 # ---
 #

@@ -8,7 +8,7 @@ characterizationModuleSpecifications <- createCharacterizationModuleSpecificatio
   timeAtRisk = data.frame(
     riskWindowStart = c(1, 1),
     startAnchor = c("cohort start", "cohort start"),
-    riskWindowEnd = c(0, 365),
+    riskWindowEnd = c(0, 180),
     endAnchor = c("cohort end", "cohort end")
   )
 )

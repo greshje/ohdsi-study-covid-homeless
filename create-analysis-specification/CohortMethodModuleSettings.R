@@ -1,6 +1,12 @@
 library(CohortMethod)
+
 source("https://raw.githubusercontent.com/OHDSI/CohortMethodModule/v0.2.0/SettingsFunctions.R")
-negativeControlOutcomes <- lapply(
+
+treatmentGroupConcepts <- c(2381)
+controlGroupConcepts <- c(58084)
+excludeConcepts <- c(treatmentGroupConcepts, controlGroupConcepts)
+
+negativeControlOutcomes <- lapply (
   X = ncoCohortSet$cohortId,
   FUN = createOutcome,
   outcomeOfInterest = FALSE,
@@ -8,28 +14,29 @@ negativeControlOutcomes <- lapply(
   priorOutcomeLookback = 30
 )
 
-outcomesOfInterest <- lapply(
+outcomesOfInterest <- lapply (
   X = 3,
   FUN = createOutcome,
   outcomeOfInterest = TRUE
 )
 
-outcomes <- append(
+outcomes <- append (
   negativeControlOutcomes,
   outcomesOfInterest
 )
 
-tcos1 <- CohortMethod::createTargetComparatorOutcomes(
+tcos1 <- CohortMethod::createTargetComparatorOutcomes (
   targetId = 1,
   comparatorId = 2,
   outcomes = outcomes,
-  excludedCovariateConceptIds = c(1118084, 1124300)
+  excludedCovariateConceptIds = excludeConcepts
 )
+
 tcos2 <- CohortMethod::createTargetComparatorOutcomes(
   targetId = 4,
   comparatorId = 5,
   outcomes = outcomes,
-  excludedCovariateConceptIds = c(1118084, 1124300)
+  excludedCovariateConceptIds = excludeConcepts
 )
 
 targetComparatorOutcomesList <- list(tcos1, tcos2)
