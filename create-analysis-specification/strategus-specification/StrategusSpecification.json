@@ -141,25 +141,17 @@
           "targetDefs": [
             {
               "id": 1,
-              "name": "Celecoxib"
+              "name": "Homeless"
             },
             {
               "id": 2,
-              "name": "Diclofenac"
-            },
-            {
-              "id": 4,
-              "name": "Celecoxib Age >= 30"
-            },
-            {
-              "id": 5,
-              "name": "Diclofenac Age >= 30"
+              "name": "Not Homeless"
             }
           ],
           "outcomeDefs": [
             {
-              "id": 1,
-              "name": "GI bleed",
+              "id": 4,
+              "name": "Vaccinated",
               "cohortId": 3,
               "cleanWindow": 9999
             }
@@ -184,13 +176,13 @@
               },
               "end": {
                 "dateField": "start",
-                "offset": 365
+                "offset": 180
               }
             }
           ],
           "analysisList": [
             {
-              "targets": [1, 2, 4, 5],
+              "targets": [1, 2],
               "outcomes": 1,
               "tars": [1, 2]
             }
@@ -282,7 +274,7 @@
             "minPriorObservation": 0,
             "riskWindowStart": 1,
             "startAnchor": "cohort start",
-            "riskWindowEnd": 365,
+            "riskWindowEnd": 180,
             "endAnchor": "cohort end",
             "covariateSettings": {
               "temporal": false,
@@ -689,7 +681,7 @@
                 "attr_class": "outcome"
               }
             ],
-            "excludedCovariateConceptIds": [1118084, 1124300],
+            "excludedCovariateConceptIds": [2381, 58084],
             "attr_class": "targetComparatorOutcomes"
           },
           {
@@ -745,7 +737,7 @@
                 "attr_class": "outcome"
               }
             ],
-            "excludedCovariateConceptIds": [1118084, 1124300],
+            "excludedCovariateConceptIds": [2381, 58084],
             "attr_class": "targetComparatorOutcomes"
           }
         ],
