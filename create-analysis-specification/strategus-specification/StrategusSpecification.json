@@ -26,32 +26,32 @@
           {
             "cohortId": "1001",
             "cohortName": "Essential hypertension",
-            "outomeConceptId": " 59621000"
+            "outcomeConceptId": " 59621000"
           },
           {
             "cohortId": "1002",
             "cohortName": "Hyperlipidemia",
-            "outomeConceptId": " 55822004"
+            "outcomeConceptId": " 55822004"
           },
           {
             "cohortId": "1003",
             "cohortName": "Fever",
-            "outomeConceptId": "386661006"
+            "outcomeConceptId": "386661006"
           },
           {
             "cohortId": "1004",
             "cohortName": "Shoulder joint pain",
-            "outomeConceptId": "267949000"
+            "outcomeConceptId": "267949000"
           },
           {
             "cohortId": "1005",
             "cohortName": "Polyneuropathy",
-            "outomeConceptId": " 42345000"
+            "outcomeConceptId": " 42345000"
           },
           {
             "cohortId": "1006",
             "cohortName": "Nasal congestion",
-            "outomeConceptId": " 68235000"
+            "outcomeConceptId": " 68235000"
           }
         ],
         "occurrenceType": "all",
@@ -225,7 +225,7 @@
             "minPriorObservation": 0,
             "riskWindowStart": 1,
             "startAnchor": "cohort start",
-            "riskWindowEnd": 0,
+            "riskWindowEnd": 180,
             "endAnchor": "cohort end",
             "covariateSettings": {
               "temporal": false,

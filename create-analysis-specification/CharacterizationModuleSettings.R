@@ -6,9 +6,9 @@ characterizationModuleSpecifications <- createCharacterizationModuleSpecificatio
   dechallengeStopInterval = 30,
   dechallengeEvaluationWindow = 30,
   timeAtRisk = data.frame(
-    riskWindowStart = c(1, 1),
     startAnchor = c("cohort start", "cohort start"),
-    riskWindowEnd = c(0, 180),
-    endAnchor = c("cohort end", "cohort end")
+    riskWindowStart = c(1, 1),
+    endAnchor = c("cohort end", "cohort end"),
+    riskWindowEnd = c(180, 180)
   )
 )
