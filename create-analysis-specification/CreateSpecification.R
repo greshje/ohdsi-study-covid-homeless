@@ -4,8 +4,8 @@ analysisSpecifications <- createEmptyAnalysisSpecificiations() %>%
   addSharedResources(ncoSharedResource) %>%
   addModuleSpecifications(cohortGeneratorModuleSpecifications) %>%
   addModuleSpecifications(cohortDiagnosticsModuleSpecifications) %>%
-  addModuleSpecifications(cohortIncidenceModuleSpecifications) %>%
   addModuleSpecifications(characterizationModuleSpecifications) %>%
+  addModuleSpecifications(cohortIncidenceModuleSpecifications) %>%
   addModuleSpecifications(cohortMethodModuleSpecifications) 
 
 ParallelLogger::saveSettingsToJson(
