@@ -24,7 +24,7 @@ targets <- list(
 
 # ---
 #
-# targets
+# outcomes
 #
 # This is the list of outcomes (result cohorts)
 #   id is the primary key (cohort_id) from Atlas/CDM

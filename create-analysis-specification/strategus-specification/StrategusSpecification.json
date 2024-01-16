@@ -73,65 +73,6 @@
       "attr_class": ["CohortGeneratorModuleSpecifications", "ModuleSpecifications"]
     },
     {
-      "module": "CohortDiagnosticsModule",
-      "version": "0.1.0",
-      "remoteRepo": "github.com",
-      "remoteUsername": "ohdsi",
-      "settings": {
-        "runInclusionStatistics": true,
-        "runIncludedSourceConcepts": true,
-        "runOrphanConcepts": true,
-        "runTimeSeries": false,
-        "runVisitContext": true,
-        "runBreakdownIndexEvents": true,
-        "runIncidenceRate": true,
-        "runCohortRelationship": true,
-        "runTemporalCohortCharacterization": true,
-        "temporalCovariateSettings": {
-          "temporal": true,
-          "temporalSequence": false,
-          "DemographicsGender": true,
-          "DemographicsAge": true,
-          "DemographicsAgeGroup": true,
-          "DemographicsRace": true,
-          "DemographicsEthnicity": true,
-          "DemographicsIndexYear": true,
-          "DemographicsIndexMonth": true,
-          "DemographicsPriorObservationTime": true,
-          "DemographicsPostObservationTime": true,
-          "DemographicsTimeInCohort": true,
-          "DemographicsIndexYearMonth": true,
-          "ConditionOccurrence": true,
-          "ConditionEraStart": true,
-          "ConditionEraOverlap": true,
-          "ConditionEraGroupOverlap": true,
-          "DrugEraStart": true,
-          "DrugEraGroupOverlap": true,
-          "ProcedureOccurrence": true,
-          "DeviceExposure": true,
-          "Measurement": true,
-          "Observation": true,
-          "CharlsonIndex": true,
-          "Dcsi": true,
-          "Chads2": true,
-          "Chads2Vasc": true,
-          "temporalStartDays": [-9999, -365, -180, -30, -365, -30, 0, 1, 31, -9999],
-          "temporalEndDays": [0, 0, 0, 0, -31, -1, 0, 30, 365, 9999],
-          "includedCovariateConceptIds": [],
-          "addDescendantsToInclude": false,
-          "excludedCovariateConceptIds": [],
-          "addDescendantsToExclude": false,
-          "includedCovariateIds": [],
-          "attr_class": "covariateSettings",
-          "attr_fun": "getDbDefaultCovariateData"
-        },
-        "minCharacterizationMean": 0.01,
-        "irWashoutPeriod": 0,
-        "incremental": false
-      },
-      "attr_class": ["CohortDiagnosticsModuleSpecifications", "ModuleSpecifications"]
-    },
-    {
       "module": "CohortIncidenceModule",
       "version": "0.2.0",
       "remoteRepo": "github.com",
@@ -195,132 +136,6 @@
         }
       },
       "attr_class": ["CohortIncidenceModuleSpecifications", "ModuleSpecifications"]
-    },
-    {
-      "module": "CharacterizationModule",
-      "version": "0.4.0",
-      "remoteRepo": "github.com",
-      "remoteUsername": "ohdsi",
-      "settings": {
-        "timeToEventSettings": [
-          {
-            "targetIds": [1, 2],
-            "outcomeIds": 3,
-            "attr_class": "timeToEventSettings"
-          }
-        ],
-        "dechallengeRechallengeSettings": [
-          {
-            "targetCohortDefinitionIds": [1, 2],
-            "outcomeCohortDefinitionIds": 3,
-            "dechallengeStopInterval": 30,
-            "dechallengeEvaluationWindow": 30,
-            "attr_class": "dechallengeRechallengeSettings"
-          }
-        ],
-        "aggregateCovariateSettings": [
-          {
-            "targetIds": [1, 2],
-            "outcomeIds": 3,
-            "minPriorObservation": 0,
-            "riskWindowStart": 1,
-            "startAnchor": "cohort start",
-            "riskWindowEnd": 180,
-            "endAnchor": "cohort end",
-            "covariateSettings": {
-              "temporal": false,
-              "temporalSequence": false,
-              "DemographicsGender": true,
-              "DemographicsAgeGroup": true,
-              "DemographicsRace": true,
-              "DemographicsEthnicity": true,
-              "DemographicsIndexYear": true,
-              "DemographicsIndexMonth": true,
-              "ConditionGroupEraLongTerm": true,
-              "ConditionGroupEraShortTerm": true,
-              "DrugGroupEraLongTerm": true,
-              "DrugGroupEraShortTerm": true,
-              "DrugGroupEraOverlapping": true,
-              "ProcedureOccurrenceLongTerm": true,
-              "ProcedureOccurrenceShortTerm": true,
-              "DeviceExposureLongTerm": true,
-              "DeviceExposureShortTerm": true,
-              "MeasurementLongTerm": true,
-              "MeasurementShortTerm": true,
-              "MeasurementRangeGroupLongTerm": true,
-              "ObservationLongTerm": true,
-              "ObservationShortTerm": true,
-              "CharlsonIndex": true,
-              "Dcsi": true,
-              "Chads2": true,
-              "Chads2Vasc": true,
-              "includedCovariateConceptIds": [],
-              "includedCovariateIds": [],
-              "addDescendantsToInclude": false,
-              "excludedCovariateConceptIds": [],
-              "addDescendantsToExclude": false,
-              "shortTermStartDays": -30,
-              "mediumTermStartDays": -180,
-              "endDays": 0,
-              "longTermStartDays": -365,
-              "attr_class": "covariateSettings",
-              "attr_fun": "getDbDefaultCovariateData"
-            },
-            "attr_class": "aggregateCovariateSettings"
-          },
-          {
-            "targetIds": [1, 2],
-            "outcomeIds": 3,
-            "minPriorObservation": 0,
-            "riskWindowStart": 1,
-            "startAnchor": "cohort start",
-            "riskWindowEnd": 180,
-            "endAnchor": "cohort end",
-            "covariateSettings": {
-              "temporal": false,
-              "temporalSequence": false,
-              "DemographicsGender": true,
-              "DemographicsAgeGroup": true,
-              "DemographicsRace": true,
-              "DemographicsEthnicity": true,
-              "DemographicsIndexYear": true,
-              "DemographicsIndexMonth": true,
-              "ConditionGroupEraLongTerm": true,
-              "ConditionGroupEraShortTerm": true,
-              "DrugGroupEraLongTerm": true,
-              "DrugGroupEraShortTerm": true,
-              "DrugGroupEraOverlapping": true,
-              "ProcedureOccurrenceLongTerm": true,
-              "ProcedureOccurrenceShortTerm": true,
-              "DeviceExposureLongTerm": true,
-              "DeviceExposureShortTerm": true,
-              "MeasurementLongTerm": true,
-              "MeasurementShortTerm": true,
-              "MeasurementRangeGroupLongTerm": true,
-              "ObservationLongTerm": true,
-              "ObservationShortTerm": true,
-              "CharlsonIndex": true,
-              "Dcsi": true,
-              "Chads2": true,
-              "Chads2Vasc": true,
-              "includedCovariateConceptIds": [],
-              "includedCovariateIds": [],
-              "addDescendantsToInclude": false,
-              "excludedCovariateConceptIds": [],
-              "addDescendantsToExclude": false,
-              "shortTermStartDays": -30,
-              "mediumTermStartDays": -180,
-              "endDays": 0,
-              "longTermStartDays": -365,
-              "attr_class": "covariateSettings",
-              "attr_fun": "getDbDefaultCovariateData"
-            },
-            "attr_class": "aggregateCovariateSettings"
-          }
-        ],
-        "attr_class": "characterizationSettings"
-      },
-      "attr_class": ["CharacterizationModuleSpecifications", "ModuleSpecifications"]
     },
     {
       "module": "CohortMethodModule",
@@ -576,9 +391,8 @@
                     "covariateIds": []
                   },
                   "default": [],
-                  "delim": ","
-                },
-                "attr_problems": {}
+                  "skip": 1
+                }
               },
               "attr_class": "args"
             },
