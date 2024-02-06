@@ -6,13 +6,14 @@
 
 # load the libraries
 print("* * * installing libraries * * *")
-library(CohortDiagnostics)
 library(Characterization)
+library(CohortDiagnostics)
+library(CohortGenerator)
 library(CohortIncidence)
 library(CohortMethod)
-library(SelfControlledCaseSeries)
 library(PatientLevelPrediction)
-library(CohortGenerator)
+library(SelfControlledCaseSeries)
+library(EvidenceSynthesis)
 library(Strategus)
 library(knitr)
 

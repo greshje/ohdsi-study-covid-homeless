@@ -3,8 +3,8 @@ analysisSpecifications <- createEmptyAnalysisSpecificiations() %>%
   addSharedResources(cohortDefinitionSharedResource) %>%
   addSharedResources(ncoSharedResource) %>%
   addModuleSpecifications(cohortGeneratorModuleSpecifications) %>%
-#  addModuleSpecifications(cohortDiagnosticsModuleSpecifications) %>%
-#  addModuleSpecifications(characterizationModuleSpecifications) %>%
+  addModuleSpecifications(cohortDiagnosticsModuleSpecifications) %>%
+  addModuleSpecifications(characterizationModuleSpecifications) %>%
   addModuleSpecifications(cohortIncidenceModuleSpecifications) %>%
   addModuleSpecifications(cohortMethodModuleSpecifications) 
 

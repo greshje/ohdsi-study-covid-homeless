@@ -9,8 +9,6 @@
 #
 # ---
 
-library(CohortIncidence)
-
 # ---
 #
 # versions
