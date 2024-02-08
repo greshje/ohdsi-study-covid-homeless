@@ -1,6 +1,6 @@
 library(CohortMethod)
 
-source("https://raw.githubusercontent.com/OHDSI/CohortMethodModule/v0.2.0/SettingsFunctions.R")
+source("https://raw.githubusercontent.com/OHDSI/CohortMethodModule/v0.3.0/SettingsFunctions.R")
 
 treatmentGroupConcepts <- c(2381)
 controlGroupConcepts <- c(58084)

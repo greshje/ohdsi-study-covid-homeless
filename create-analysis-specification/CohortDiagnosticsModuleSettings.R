@@ -1,4 +1,5 @@
-source("https://raw.githubusercontent.com/OHDSI/CohortDiagnosticsModule/v0.1.0/SettingsFunctions.R")
+source("https://raw.githubusercontent.com/OHDSI/CohortDiagnosticsModule/v0.2.0/SettingsFunctions.R")
+
 cohortDiagnosticsModuleSpecifications <- createCohortDiagnosticsModuleSpecifications(
   runInclusionStatistics = TRUE,
   runIncludedSourceConcepts = TRUE,

@@ -1,4 +1,5 @@
-source("https://raw.githubusercontent.com/OHDSI/CharacterizationModule/v0.4.0/SettingsFunctions.R")
+source("https://raw.githubusercontent.com/OHDSI/CharacterizationModule/v0.5.0/SettingsFunctions.R")
+
 characterizationModuleSpecifications <- createCharacterizationModuleSpecifications(
   targetIds = c(1, 2),
   outcomeIds = 3,

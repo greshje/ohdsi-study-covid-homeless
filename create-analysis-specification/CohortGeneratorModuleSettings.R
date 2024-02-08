@@ -1,4 +1,4 @@
-source("https://raw.githubusercontent.com/OHDSI/CohortGeneratorModule/v0.1.0/SettingsFunctions.R")
+source("https://raw.githubusercontent.com/OHDSI/CohortGeneratorModule/v0.3.0/SettingsFunctions.R")
 
 # Create the cohort definition shared resource element for the analysis specification
 cohortDefinitionSharedResource <- createCohortSharedResourceSpecifications(
